@@ -948,7 +948,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(240,360)" to="(240,380)"/>
     <wire from="(230,410)" to="(230,430)"/>
     <wire from="(340,90)" to="(760,90)"/>
-    <wire from="(590,360)" to="(590,440)"/>
     <wire from="(180,150)" to="(220,150)"/>
     <wire from="(180,230)" to="(220,230)"/>
     <wire from="(180,70)" to="(220,70)"/>
@@ -957,12 +956,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(780,380)" to="(780,420)"/>
     <wire from="(340,90)" to="(340,320)"/>
     <wire from="(740,110)" to="(760,110)"/>
-    <wire from="(310,360)" to="(590,360)"/>
+    <wire from="(250,390)" to="(590,390)"/>
     <wire from="(800,220)" to="(810,220)"/>
     <wire from="(310,60)" to="(760,60)"/>
+    <wire from="(590,390)" to="(590,440)"/>
     <wire from="(180,300)" to="(180,360)"/>
     <wire from="(280,320)" to="(340,320)"/>
-    <wire from="(250,390)" to="(310,390)"/>
     <wire from="(740,110)" to="(740,120)"/>
     <wire from="(170,270)" to="(170,340)"/>
     <wire from="(170,370)" to="(230,370)"/>
@@ -975,7 +974,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(810,200)" to="(810,220)"/>
     <wire from="(180,300)" to="(220,300)"/>
     <wire from="(310,60)" to="(310,90)"/>
-    <wire from="(310,360)" to="(310,390)"/>
     <wire from="(170,340)" to="(170,370)"/>
     <wire from="(270,90)" to="(310,90)"/>
     <wire from="(740,100)" to="(760,100)"/>
@@ -1130,9 +1128,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="incoming" val="5"/>
       <a name="appear" val="center"/>
     </comp>
-    <comp lib="6" loc="(448,417)" name="Text">
-      <a name="text" val="00101 - Soma de Inteiros"/>
-    </comp>
     <comp lib="1" loc="(380,150)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="3"/>
@@ -1154,6 +1149,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Seletor"/>
+    </comp>
+    <comp lib="6" loc="(452,416)" name="Text">
+      <a name="text" val="00101 - Soma de Inteiros"/>
     </comp>
     <comp lib="2" loc="(130,180)" name="Multiplexer">
       <a name="facing" val="west"/>
