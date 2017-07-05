@@ -880,6 +880,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(3690,670)" to="(3690,1000)"/>
     <wire from="(470,660)" to="(470,720)"/>
     <wire from="(1130,1120)" to="(1130,1420)"/>
+    <comp lib="0" loc="(870,1660)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp loc="(3950,1120)" name="Celula"/>
+    <comp loc="(2300,1120)" name="Celula"/>
+    <comp lib="6" loc="(743,1304)" name="Text">
+      <a name="text" val="00001=OR"/>
+    </comp>
+    <comp loc="(3580,1120)" name="Celula"/>
+    <comp loc="(1180,1390)" name="Celula"/>
     <comp lib="2" loc="(250,1980)" name="Multiplexer">
       <a name="facing" val="west"/>
       <a name="selloc" val="tr"/>
@@ -887,8 +900,73 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="enable" val="false"/>
     </comp>
+    <comp lib="0" loc="(100,490)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="label" val="Entrada A"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(2300,1390)" name="Celula"/>
+    <comp loc="(1890,1120)" name="Celula"/>
+    <comp loc="(2950,1390)" name="Celula"/>
+    <comp loc="(1890,1390)" name="Celula"/>
+    <comp lib="6" loc="(763,1384)" name="Text">
+      <a name="text" val="00101=SOMA NAT"/>
+    </comp>
+    <comp loc="(2950,1120)" name="Celula"/>
+    <comp loc="(1690,1120)" name="Celula"/>
+    <comp loc="(2730,1120)" name="Celula"/>
+    <comp loc="(4130,1120)" name="Celula"/>
+    <comp lib="0" loc="(4080,1360)" name="Ground">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(748,1280)" name="Text">
+      <a name="text" val="00000=AND"/>
+    </comp>
+    <comp loc="(2730,1390)" name="Celula"/>
+    <comp lib="6" loc="(763,1366)" name="Text">
+      <a name="text" val="00100=SOMA INT"/>
+    </comp>
+    <comp loc="(1180,1130)" name="Celula"/>
+    <comp lib="0" loc="(470,720)" name="Splitter">
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="6" loc="(760,1402)" name="Text">
+      <a name="text" val="00110=SUBTRAIR"/>
+    </comp>
+    <comp lib="1" loc="(780,1730)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+      <a name="negate4" val="true"/>
+    </comp>
+    <comp lib="6" loc="(747,1325)" name="Text">
+      <a name="text" val="00010=XOR"/>
+    </comp>
+    <comp loc="(3760,1390)" name="Celula"/>
+    <comp loc="(1510,1120)" name="Celula"/>
+    <comp loc="(1510,1390)" name="Celula"/>
+    <comp lib="0" loc="(920,160)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+    </comp>
+    <comp loc="(3160,1120)" name="Celula"/>
     <comp loc="(140,1550)" name="SLL">
       <a name="label" val="SLL"/>
+    </comp>
+    <comp lib="0" loc="(4310,1170)" name="Pin">
+      <a name="output" val="true"/>
+    </comp>
+    <comp loc="(140,1620)" name="SRL">
+      <a name="label" val="SRL"/>
+    </comp>
+    <comp lib="0" loc="(870,1730)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="center"/>
     </comp>
     <comp lib="1" loc="(780,1660)" name="AND Gate">
       <a name="facing" val="west"/>
@@ -897,16 +975,32 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="negate2" val="true"/>
       <a name="negate4" val="true"/>
     </comp>
-    <comp lib="6" loc="(751,1346)" name="Text">
-      <a name="text" val="00011=NAND"/>
+    <comp loc="(2510,1120)" name="Celula"/>
+    <comp loc="(3550,1390)" name="Celula"/>
+    <comp loc="(2100,1390)" name="Celula"/>
+    <comp lib="1" loc="(780,1590)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="negate3" val="true"/>
+      <a name="negate4" val="true"/>
     </comp>
-    <comp lib="0" loc="(100,490)" name="Pin">
+    <comp loc="(2510,1390)" name="Celula"/>
+    <comp loc="(1340,1380)" name="Celula"/>
+    <comp loc="(3370,1120)" name="Celula"/>
+    <comp lib="0" loc="(100,1980)" name="Pin">
+      <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="Entrada A"/>
+      <a name="label" val="Saída S"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp loc="(140,1620)" name="SRL">
-      <a name="label" val="SRL"/>
+    <comp lib="6" loc="(804,1438)" name="Text">
+      <a name="text" val="01000=DESLOCAMENTO DIREITA"/>
+    </comp>
+    <comp lib="6" loc="(814,1420)" name="Text">
+      <a name="text" val="00111=DESLOCAMENTO ESQUERDA"/>
+    </comp>
+    <comp loc="(1340,1120)" name="Celula"/>
+    <comp loc="(4290,1100)" name="OverFlowControler">
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(470,660)" name="Pin">
       <a name="facing" val="south"/>
@@ -914,31 +1008,36 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Entrada B"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp loc="(2300,1390)" name="Celula"/>
+    <comp loc="(3370,1390)" name="Celula"/>
+    <comp lib="6" loc="(751,1346)" name="Text">
+      <a name="text" val="00011=NAND"/>
+    </comp>
     <comp lib="6" loc="(821,1456)" name="Text">
       <a name="text" val="01001=DESLOCAMENTO DIREITA ARIT"/>
     </comp>
-    <comp loc="(3550,1390)" name="Celula"/>
-    <comp loc="(1890,1120)" name="Celula"/>
-    <comp loc="(2950,1390)" name="Celula"/>
-    <comp loc="(2510,1390)" name="Celula"/>
-    <comp lib="6" loc="(763,1384)" name="Text">
-      <a name="text" val="00101=SOMA NAT"/>
-    </comp>
-    <comp loc="(3370,1120)" name="Celula"/>
-    <comp lib="1" loc="(780,1590)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="negate3" val="true"/>
-      <a name="negate4" val="true"/>
-    </comp>
+    <comp loc="(3950,1390)" name="Celula"/>
     <comp lib="6" loc="(4244,1092)" name="Text">
       <a name="text" val="Overflow"/>
     </comp>
-    <comp lib="0" loc="(470,720)" name="Splitter">
-      <a name="fanout" val="32"/>
-      <a name="incoming" val="32"/>
-      <a name="appear" val="right"/>
+    <comp lib="0" loc="(1020,1530)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Seletor"/>
     </comp>
+    <comp loc="(4130,1390)" name="Celula"/>
+    <comp loc="(1690,1390)" name="Celula"/>
+    <comp loc="(2100,1120)" name="Celula"/>
+    <comp loc="(3760,1120)" name="Celula"/>
+    <comp lib="0" loc="(870,1590)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp loc="(140,1690)" name="SRA">
+      <a name="label" val="SRA"/>
+    </comp>
+    <comp loc="(3160,1390)" name="Celula"/>
     <comp lib="0" loc="(760,1960)" name="Splitter">
       <a name="fanout" val="32"/>
       <a name="incoming" val="32"/>
@@ -976,105 +1075,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="1"/>
       <a name="bit31" val="0"/>
     </comp>
-    <comp lib="0" loc="(870,1660)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-      <a name="appear" val="center"/>
-    </comp>
-    <comp loc="(3950,1390)" name="Celula"/>
-    <comp loc="(4130,1120)" name="Celula"/>
-    <comp loc="(1690,1120)" name="Celula"/>
-    <comp loc="(3950,1120)" name="Celula"/>
-    <comp loc="(2730,1120)" name="Celula"/>
-    <comp loc="(3370,1390)" name="Celula"/>
-    <comp loc="(1890,1390)" name="Celula"/>
-    <comp loc="(3160,1390)" name="Celula"/>
-    <comp loc="(1180,1390)" name="Celula"/>
-    <comp lib="0" loc="(4080,1360)" name="Ground">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(763,1366)" name="Text">
-      <a name="text" val="00100=SOMA INT"/>
-    </comp>
-    <comp lib="6" loc="(743,1304)" name="Text">
-      <a name="text" val="00001=OR"/>
-    </comp>
-    <comp lib="6" loc="(748,1280)" name="Text">
-      <a name="text" val="00000=AND"/>
-    </comp>
-    <comp loc="(1510,1120)" name="Celula"/>
-    <comp loc="(2730,1390)" name="Celula"/>
-    <comp loc="(1510,1390)" name="Celula"/>
-    <comp loc="(2950,1120)" name="Celula"/>
-    <comp lib="6" loc="(814,1420)" name="Text">
-      <a name="text" val="00111=DESLOCAMENTO ESQUERDA"/>
-    </comp>
-    <comp loc="(1340,1120)" name="Celula"/>
-    <comp loc="(1340,1380)" name="Celula"/>
-    <comp loc="(2510,1120)" name="Celula"/>
-    <comp lib="6" loc="(804,1438)" name="Text">
-      <a name="text" val="01000=DESLOCAMENTO DIREITA"/>
-    </comp>
-    <comp lib="0" loc="(870,1730)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-      <a name="appear" val="center"/>
-    </comp>
-    <comp lib="6" loc="(760,1402)" name="Text">
-      <a name="text" val="00110=SUBTRAIR"/>
-    </comp>
-    <comp loc="(4290,1100)" name="OverFlowControler">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="1" loc="(780,1730)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="negate1" val="true"/>
-      <a name="negate2" val="true"/>
-      <a name="negate4" val="true"/>
-    </comp>
-    <comp loc="(3760,1390)" name="Celula"/>
-    <comp lib="0" loc="(100,1980)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Saída S"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1020,1530)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Seletor"/>
-    </comp>
-    <comp loc="(3580,1120)" name="Celula"/>
-    <comp loc="(3160,1120)" name="Celula"/>
-    <comp loc="(2100,1120)" name="Celula"/>
-    <comp loc="(2300,1120)" name="Celula"/>
-    <comp loc="(2100,1390)" name="Celula"/>
-    <comp lib="0" loc="(920,160)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="32"/>
-      <a name="incoming" val="32"/>
-    </comp>
-    <comp loc="(140,1690)" name="SRA">
-      <a name="label" val="SRA"/>
-    </comp>
-    <comp lib="0" loc="(4310,1170)" name="Pin">
-      <a name="output" val="true"/>
-    </comp>
-    <comp loc="(1690,1390)" name="Celula"/>
-    <comp lib="6" loc="(747,1325)" name="Text">
-      <a name="text" val="00010=XOR"/>
-    </comp>
-    <comp loc="(3760,1120)" name="Celula"/>
-    <comp loc="(1180,1130)" name="Celula"/>
-    <comp lib="0" loc="(870,1590)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-      <a name="appear" val="center"/>
-    </comp>
-    <comp loc="(4130,1390)" name="Celula"/>
   </circuit>
   <circuit name="Celula">
     <a name="circuit" val="Celula"/>
@@ -1174,58 +1174,32 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(850,190)" to="(990,190)"/>
     <wire from="(1010,600)" to="(1010,780)"/>
     <wire from="(490,90)" to="(490,210)"/>
-    <comp lib="6" loc="(1152,117)" name="Text">
-      <a name="text" val="00000=AND"/>
-    </comp>
-    <comp loc="(360,510)" name="Somador">
-      <a name="label" val="Somador"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(1030,300)" name="Multiplexer">
-      <a name="select" val="5"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(40,70)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Cin"/>
-    </comp>
-    <comp lib="6" loc="(1169,250)" name="Text">
-      <a name="text" val="00101=SOMA NAT"/>
-    </comp>
-    <comp lib="1" loc="(380,250)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="1" loc="(720,600)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="negate0" val="true"/>
       <a name="negate3" val="true"/>
       <a name="negate4" val="true"/>
     </comp>
+    <comp lib="6" loc="(1178,275)" name="Text">
+      <a name="text" val="00110=SUBTRATOR"/>
+    </comp>
     <comp lib="6" loc="(1217,321)" name="Text">
       <a name="text" val="01000=DESLOCAMENTO DIREITA"/>
     </comp>
-    <comp lib="0" loc="(840,600)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-      <a name="appear" val="center"/>
+    <comp lib="0" loc="(150,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="6" loc="(1157,191)" name="Text">
+      <a name="text" val="00011=NAND"/>
+    </comp>
+    <comp loc="(370,610)" name="Subtrator">
+      <a name="label" val="Subtrator"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="6" loc="(1226,299)" name="Text">
       <a name="text" val="00111=DESLOCAMENTO ESQUERDA"/>
-    </comp>
-    <comp lib="6" loc="(1150,139)" name="Text">
-      <a name="text" val="00001=OR"/>
-    </comp>
-    <comp lib="1" loc="(390,330)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(100,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="b"/>
-    </comp>
-    <comp lib="6" loc="(1168,223)" name="Text">
-      <a name="text" val="00100=SOMA INT"/>
     </comp>
     <comp lib="1" loc="(390,400)" name="NAND Gate">
       <a name="inputs" val="2"/>
@@ -1233,33 +1207,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="1" loc="(380,170)" name="AND Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp loc="(370,610)" name="Subtrator">
-      <a name="label" val="Subtrator"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(40,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Cin"/>
     </comp>
     <comp lib="6" loc="(1153,166)" name="Text">
       <a name="text" val="00010=XOR"/>
-    </comp>
-    <comp lib="6" loc="(1178,275)" name="Text">
-      <a name="text" val="00110=SUBTRATOR"/>
-    </comp>
-    <comp lib="2" loc="(720,520)" name="Multiplexer">
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(750,520)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Cout"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(1157,191)" name="Text">
-      <a name="text" val="00011=NAND"/>
-    </comp>
-    <comp lib="0" loc="(1070,320)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="label" val="S"/>
-      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(1010,780)" name="Pin">
       <a name="facing" val="north"/>
@@ -1267,10 +1220,57 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="Seletor"/>
     </comp>
-    <comp lib="0" loc="(150,80)" name="Pin">
+    <comp loc="(360,510)" name="Somador">
+      <a name="label" val="Somador"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(840,600)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="2" loc="(720,520)" name="Multiplexer">
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="6" loc="(1152,117)" name="Text">
+      <a name="text" val="00000=AND"/>
+    </comp>
+    <comp lib="6" loc="(1168,223)" name="Text">
+      <a name="text" val="00100=SOMA INT"/>
+    </comp>
+    <comp lib="0" loc="(1070,320)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="S"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(750,520)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Cout"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(1030,300)" name="Multiplexer">
+      <a name="select" val="5"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="6" loc="(1150,139)" name="Text">
+      <a name="text" val="00001=OR"/>
+    </comp>
+    <comp lib="0" loc="(100,80)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="a"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="6" loc="(1169,250)" name="Text">
+      <a name="text" val="00101=SOMA NAT"/>
+    </comp>
+    <comp lib="1" loc="(390,330)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(380,250)" name="OR Gate">
+      <a name="inputs" val="2"/>
     </comp>
   </circuit>
   <circuit name="OverFlowControler">
@@ -1312,30 +1312,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(490,170)" to="(490,230)"/>
     <wire from="(520,140)" to="(520,200)"/>
     <wire from="(440,220)" to="(510,220)"/>
-    <comp lib="1" loc="(380,220)" name="AND Gate">
+    <comp lib="0" loc="(300,260)" name="Splitter">
       <a name="facing" val="west"/>
-      <a name="inputs" val="3"/>
-      <a name="negate0" val="true"/>
-      <a name="negate1" val="true"/>
-    </comp>
-    <comp lib="0" loc="(550,180)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="b"/>
-    </comp>
-    <comp lib="2" loc="(130,170)" name="Multiplexer">
-      <a name="facing" val="west"/>
-      <a name="enable" val="false"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="center"/>
     </comp>
     <comp lib="1" loc="(380,150)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="3"/>
       <a name="negate2" val="true"/>
-    </comp>
-    <comp lib="0" loc="(200,60)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Cin"/>
     </comp>
     <comp lib="6" loc="(453,396)" name="Text">
       <a name="text" val="00100 - Soma de Naturais"/>
@@ -1345,40 +1331,54 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Overflow"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="1" loc="(210,260)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="negate1" val="true"/>
-      <a name="negate3" val="true"/>
-      <a name="negate4" val="true"/>
-    </comp>
-    <comp lib="0" loc="(300,260)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-      <a name="appear" val="center"/>
-    </comp>
-    <comp lib="0" loc="(550,230)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="s"/>
-    </comp>
     <comp lib="0" loc="(310,390)" name="Pin">
       <a name="facing" val="north"/>
       <a name="width" val="5"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Seletor"/>
     </comp>
+    <comp lib="2" loc="(130,170)" name="Multiplexer">
+      <a name="facing" val="west"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(200,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Cin"/>
+    </comp>
     <comp lib="1" loc="(280,180)" name="OR Gate">
       <a name="facing" val="west"/>
       <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(452,416)" name="Text">
-      <a name="text" val="00101 - Soma de Inteiros"/>
     </comp>
     <comp lib="0" loc="(550,140)" name="Pin">
       <a name="facing" val="west"/>
       <a name="tristate" val="false"/>
       <a name="label" val="a"/>
+    </comp>
+    <comp lib="0" loc="(550,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="0" loc="(550,230)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="s"/>
+    </comp>
+    <comp lib="1" loc="(380,220)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="inputs" val="3"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="6" loc="(452,416)" name="Text">
+      <a name="text" val="00101 - Soma de Inteiros"/>
+    </comp>
+    <comp lib="1" loc="(210,260)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="negate1" val="true"/>
+      <a name="negate3" val="true"/>
+      <a name="negate4" val="true"/>
     </comp>
   </circuit>
   <circuit name="Somador">
@@ -1411,12 +1411,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(290,320)" to="(290,380)"/>
     <wire from="(200,350)" to="(270,350)"/>
     <wire from="(220,140)" to="(350,140)"/>
+    <comp lib="1" loc="(290,430)" name="OR Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(310,40)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="label" val="Vem1"/>
+    </comp>
+    <comp lib="0" loc="(70,140)" name="Pin">
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="1" loc="(670,140)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(200,320)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="1" loc="(370,320)" name="AND Gate">
       <a name="facing" val="south"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(70,180)" name="Pin">
-      <a name="label" val="b"/>
+    <comp lib="1" loc="(290,320)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(710,140)" name="Pin">
       <a name="facing" val="west"/>
@@ -1424,24 +1443,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="S"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(70,140)" name="Pin">
-      <a name="label" val="a"/>
-    </comp>
-    <comp lib="1" loc="(290,430)" name="OR Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(200,320)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(310,40)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="label" val="Vem1"/>
-    </comp>
-    <comp lib="1" loc="(290,320)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(70,180)" name="Pin">
+      <a name="label" val="b"/>
     </comp>
     <comp lib="1" loc="(570,160)" name="XOR Gate">
       <a name="inputs" val="2"/>
@@ -1450,9 +1453,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="label" val="Vai1"/>
-    </comp>
-    <comp lib="1" loc="(670,140)" name="XOR Gate">
-      <a name="inputs" val="2"/>
     </comp>
   </circuit>
   <circuit name="Subtrator">
@@ -1490,19 +1490,36 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="inputs" val="2"/>
       <a name="negate1" val="true"/>
     </comp>
+    <comp lib="0" loc="(70,140)" name="Pin">
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="1" loc="(670,140)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="0" loc="(70,180)" name="Pin">
       <a name="label" val="b"/>
-    </comp>
-    <comp lib="1" loc="(570,160)" name="XOR Gate">
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(290,500)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="label" val="Vai1"/>
     </comp>
-    <comp lib="0" loc="(70,140)" name="Pin">
-      <a name="label" val="a"/>
+    <comp lib="1" loc="(290,320)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(290,430)" name="OR Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(570,160)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(710,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="S"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="1" loc="(370,320)" name="AND Gate">
       <a name="facing" val="south"/>
@@ -1512,23 +1529,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(310,40)" name="Pin">
       <a name="facing" val="south"/>
       <a name="label" val="Vem1"/>
-    </comp>
-    <comp lib="0" loc="(710,140)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="S"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(290,430)" name="OR Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(670,140)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(290,320)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="2"/>
     </comp>
   </circuit>
   <circuit name="SRL">
@@ -1932,22 +1932,130 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1290,600)" to="(1440,600)"/>
     <wire from="(230,360)" to="(360,360)"/>
     <wire from="(3150,1180)" to="(3200,1180)"/>
+    <comp lib="2" loc="(2090,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(80,890)" name="Ground"/>
+    <comp lib="2" loc="(240,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1830,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1960,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
     <comp lib="2" loc="(2490,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(2620,740)" name="Multiplexer">
+    <comp lib="2" loc="(3150,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
+    <comp lib="2" loc="(4080,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(140,1190)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Saída A"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(180,780)" name="Pin"/>
     <comp lib="2" loc="(4340,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(240,740)" name="Multiplexer">
+    <comp lib="2" loc="(2890,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3810,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(630,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1160,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1300,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3680,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1560,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1430,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3280,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(770,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(210,220)" name="Splitter">
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="2" loc="(2360,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3950,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3550,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(900,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2750,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -1988,54 +2096,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="1"/>
       <a name="bit31" val="0"/>
     </comp>
-    <comp lib="0" loc="(80,890)" name="Ground"/>
-    <comp lib="2" loc="(1030,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1690,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(500,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1830,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(180,780)" name="Pin"/>
-    <comp lib="2" loc="(900,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3150,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3810,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2090,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2750,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2360,740)" name="Multiplexer">
+    <comp lib="2" loc="(2220,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -2045,32 +2106,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Entrada A"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="2" loc="(1430,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
     <comp lib="2" loc="(4210,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(3280,740)" name="Multiplexer">
+    <comp lib="2" loc="(1030,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(3950,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(630,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1300,740)" name="Multiplexer">
+    <comp lib="2" loc="(500,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -2080,33 +2126,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(1960,740)" name="Multiplexer">
+    <comp lib="2" loc="(1690,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(4080,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(140,1190)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Saída A"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="2" loc="(1160,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3680,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3420,740)" name="Multiplexer">
+    <comp lib="2" loc="(2620,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -2116,35 +2141,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(2220,740)" name="Multiplexer">
+    <comp lib="2" loc="(3420,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1560,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2890,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3550,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(770,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(210,220)" name="Splitter">
-      <a name="fanout" val="32"/>
-      <a name="incoming" val="32"/>
-      <a name="appear" val="center"/>
     </comp>
   </circuit>
   <circuit name="DeslocadorCompleto4">
@@ -2152,268 +2152,147 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(500,250)" to="(500,320)"/>
-    <wire from="(280,190)" to="(280,260)"/>
-    <wire from="(380,250)" to="(380,320)"/>
-    <wire from="(140,130)" to="(200,130)"/>
-    <wire from="(280,260)" to="(400,260)"/>
-    <wire from="(630,260)" to="(690,260)"/>
-    <wire from="(200,470)" to="(310,470)"/>
-    <wire from="(770,300)" to="(810,300)"/>
-    <wire from="(430,380)" to="(540,380)"/>
-    <wire from="(450,760)" to="(560,760)"/>
-    <wire from="(270,70)" to="(270,100)"/>
-    <wire from="(210,290)" to="(210,320)"/>
-    <wire from="(230,670)" to="(230,700)"/>
-    <wire from="(140,670)" to="(230,670)"/>
-    <wire from="(510,330)" to="(540,330)"/>
-    <wire from="(310,730)" to="(310,890)"/>
-    <wire from="(490,350)" to="(490,510)"/>
-    <wire from="(300,170)" to="(320,170)"/>
-    <wire from="(510,730)" to="(510,890)"/>
-    <wire from="(530,710)" to="(560,710)"/>
-    <wire from="(500,170)" to="(520,170)"/>
-    <wire from="(310,470)" to="(310,510)"/>
-    <wire from="(250,330)" to="(250,380)"/>
-    <wire from="(190,270)" to="(190,320)"/>
-    <wire from="(210,650)" to="(210,700)"/>
-    <wire from="(140,480)" to="(220,480)"/>
-    <wire from="(440,520)" to="(440,570)"/>
-    <wire from="(270,710)" to="(270,760)"/>
-    <wire from="(330,330)" to="(330,380)"/>
-    <wire from="(350,710)" to="(350,760)"/>
-    <wire from="(140,290)" to="(210,290)"/>
-    <wire from="(550,570)" to="(630,570)"/>
-    <wire from="(290,450)" to="(290,510)"/>
-    <wire from="(620,240)" to="(700,240)"/>
-    <wire from="(410,450)" to="(410,510)"/>
-    <wire from="(200,350)" to="(200,470)"/>
-    <wire from="(140,480)" to="(140,670)"/>
-    <wire from="(700,230)" to="(700,240)"/>
-    <wire from="(490,90)" to="(490,160)"/>
-    <wire from="(370,90)" to="(370,160)"/>
-    <wire from="(480,190)" to="(480,320)"/>
-    <wire from="(120,130)" to="(120,140)"/>
-    <wire from="(620,250)" to="(620,380)"/>
-    <wire from="(270,100)" to="(390,100)"/>
-    <wire from="(380,250)" to="(500,250)"/>
-    <wire from="(680,320)" to="(740,320)"/>
-    <wire from="(190,270)" to="(300,270)"/>
-    <wire from="(210,650)" to="(320,650)"/>
-    <wire from="(190,190)" to="(190,270)"/>
-    <wire from="(720,220)" to="(760,220)"/>
-    <wire from="(520,210)" to="(620,210)"/>
-    <wire from="(690,260)" to="(690,290)"/>
-    <wire from="(320,210)" to="(420,210)"/>
-    <wire from="(330,380)" to="(430,380)"/>
-    <wire from="(350,760)" to="(450,760)"/>
-    <wire from="(730,210)" to="(730,290)"/>
-    <wire from="(390,350)" to="(390,440)"/>
-    <wire from="(470,70)" to="(470,160)"/>
-    <wire from="(200,130)" to="(200,160)"/>
-    <wire from="(300,540)" to="(300,630)"/>
-    <wire from="(220,330)" to="(250,330)"/>
-    <wire from="(240,710)" to="(270,710)"/>
-    <wire from="(140,130)" to="(140,290)"/>
-    <wire from="(220,730)" to="(220,890)"/>
-    <wire from="(230,210)" to="(320,210)"/>
-    <wire from="(700,260)" to="(720,260)"/>
-    <wire from="(320,520)" to="(340,520)"/>
-    <wire from="(180,70)" to="(180,110)"/>
-    <wire from="(410,330)" to="(430,330)"/>
-    <wire from="(430,710)" to="(450,710)"/>
-    <wire from="(320,170)" to="(320,210)"/>
-    <wire from="(210,170)" to="(230,170)"/>
-    <wire from="(520,170)" to="(520,210)"/>
-    <wire from="(180,110)" to="(180,160)"/>
-    <wire from="(260,570)" to="(340,570)"/>
-    <wire from="(300,270)" to="(300,320)"/>
-    <wire from="(320,650)" to="(320,700)"/>
-    <wire from="(380,190)" to="(380,250)"/>
-    <wire from="(620,250)" to="(700,250)"/>
-    <wire from="(550,520)" to="(550,570)"/>
-    <wire from="(140,290)" to="(140,480)"/>
-    <wire from="(390,440)" to="(390,510)"/>
-    <wire from="(420,630)" to="(420,700)"/>
-    <wire from="(510,440)" to="(510,510)"/>
-    <wire from="(300,630)" to="(300,700)"/>
-    <wire from="(290,450)" to="(410,450)"/>
-    <wire from="(370,90)" to="(490,90)"/>
-    <wire from="(700,230)" to="(760,230)"/>
-    <wire from="(180,110)" to="(290,110)"/>
-    <wire from="(370,70)" to="(370,90)"/>
-    <wire from="(640,270)" to="(680,270)"/>
-    <wire from="(520,610)" to="(520,700)"/>
-    <wire from="(440,570)" to="(550,570)"/>
-    <wire from="(400,610)" to="(400,700)"/>
-    <wire from="(220,480)" to="(220,510)"/>
-    <wire from="(640,270)" to="(640,760)"/>
-    <wire from="(720,220)" to="(720,260)"/>
-    <wire from="(410,730)" to="(410,890)"/>
-    <wire from="(500,540)" to="(500,700)"/>
-    <wire from="(730,210)" to="(760,210)"/>
-    <wire from="(400,170)" to="(420,170)"/>
-    <wire from="(520,520)" to="(550,520)"/>
-    <wire from="(230,170)" to="(230,210)"/>
-    <wire from="(120,130)" to="(140,130)"/>
-    <wire from="(210,540)" to="(210,650)"/>
-    <wire from="(430,330)" to="(430,380)"/>
-    <wire from="(450,710)" to="(450,760)"/>
-    <wire from="(290,110)" to="(290,160)"/>
-    <wire from="(260,520)" to="(260,570)"/>
-    <wire from="(340,520)" to="(340,570)"/>
-    <wire from="(280,260)" to="(280,320)"/>
-    <wire from="(540,380)" to="(620,380)"/>
-    <wire from="(560,760)" to="(640,760)"/>
-    <wire from="(400,260)" to="(400,320)"/>
-    <wire from="(400,540)" to="(400,610)"/>
-    <wire from="(700,250)" to="(700,260)"/>
-    <wire from="(300,630)" to="(420,630)"/>
-    <wire from="(780,240)" to="(780,310)"/>
-    <wire from="(390,440)" to="(510,440)"/>
-    <wire from="(400,610)" to="(520,610)"/>
-    <wire from="(690,290)" to="(730,290)"/>
-    <wire from="(620,210)" to="(620,240)"/>
-    <wire from="(340,570)" to="(440,570)"/>
-    <wire from="(420,210)" to="(520,210)"/>
-    <wire from="(290,350)" to="(290,450)"/>
-    <wire from="(830,290)" to="(850,290)"/>
-    <wire from="(230,520)" to="(260,520)"/>
-    <wire from="(740,200)" to="(760,200)"/>
-    <wire from="(310,330)" to="(330,330)"/>
-    <wire from="(330,710)" to="(350,710)"/>
-    <wire from="(780,310)" to="(810,310)"/>
-    <wire from="(420,520)" to="(440,520)"/>
-    <wire from="(200,470)" to="(200,510)"/>
-    <wire from="(420,170)" to="(420,210)"/>
-    <wire from="(740,200)" to="(740,320)"/>
-    <wire from="(250,380)" to="(330,380)"/>
-    <wire from="(270,760)" to="(350,760)"/>
-    <wire from="(770,240)" to="(770,300)"/>
-    <wire from="(270,100)" to="(270,160)"/>
-    <wire from="(680,270)" to="(680,320)"/>
-    <wire from="(390,100)" to="(390,160)"/>
-    <wire from="(540,330)" to="(540,380)"/>
-    <wire from="(560,710)" to="(560,760)"/>
-    <wire from="(630,260)" to="(630,570)"/>
-    <comp lib="0" loc="(850,290)" name="Pin">
+    <wire from="(200,310)" to="(200,380)"/>
+    <wire from="(140,90)" to="(200,90)"/>
+    <wire from="(620,220)" to="(670,220)"/>
+    <wire from="(430,340)" to="(540,340)"/>
+    <wire from="(270,30)" to="(270,60)"/>
+    <wire from="(510,290)" to="(540,290)"/>
+    <wire from="(690,200)" to="(710,200)"/>
+    <wire from="(300,130)" to="(320,130)"/>
+    <wire from="(500,130)" to="(520,130)"/>
+    <wire from="(190,220)" to="(400,220)"/>
+    <wire from="(250,290)" to="(250,340)"/>
+    <wire from="(330,290)" to="(330,340)"/>
+    <wire from="(390,310)" to="(390,380)"/>
+    <wire from="(490,50)" to="(490,120)"/>
+    <wire from="(370,50)" to="(370,120)"/>
+    <wire from="(190,150)" to="(190,220)"/>
+    <wire from="(480,150)" to="(480,280)"/>
+    <wire from="(140,230)" to="(140,240)"/>
+    <wire from="(120,90)" to="(120,100)"/>
+    <wire from="(270,60)" to="(390,60)"/>
+    <wire from="(140,90)" to="(140,230)"/>
+    <wire from="(520,170)" to="(620,170)"/>
+    <wire from="(280,200)" to="(280,280)"/>
+    <wire from="(320,170)" to="(420,170)"/>
+    <wire from="(330,340)" to="(430,340)"/>
+    <wire from="(470,30)" to="(470,120)"/>
+    <wire from="(200,90)" to="(200,120)"/>
+    <wire from="(220,290)" to="(250,290)"/>
+    <wire from="(230,170)" to="(320,170)"/>
+    <wire from="(180,30)" to="(180,70)"/>
+    <wire from="(410,290)" to="(430,290)"/>
+    <wire from="(320,130)" to="(320,170)"/>
+    <wire from="(210,130)" to="(230,130)"/>
+    <wire from="(520,130)" to="(520,170)"/>
+    <wire from="(180,70)" to="(180,120)"/>
+    <wire from="(620,220)" to="(620,340)"/>
+    <wire from="(300,230)" to="(300,280)"/>
+    <wire from="(370,50)" to="(490,50)"/>
+    <wire from="(180,70)" to="(290,70)"/>
+    <wire from="(370,30)" to="(370,50)"/>
+    <wire from="(280,200)" to="(500,200)"/>
+    <wire from="(140,230)" to="(300,230)"/>
+    <wire from="(400,130)" to="(420,130)"/>
+    <wire from="(230,130)" to="(230,170)"/>
+    <wire from="(120,90)" to="(140,90)"/>
+    <wire from="(430,290)" to="(430,340)"/>
+    <wire from="(290,70)" to="(290,120)"/>
+    <wire from="(540,340)" to="(620,340)"/>
+    <wire from="(400,220)" to="(400,280)"/>
+    <wire from="(490,310)" to="(490,380)"/>
+    <wire from="(290,310)" to="(290,380)"/>
+    <wire from="(380,150)" to="(380,280)"/>
+    <wire from="(620,210)" to="(670,210)"/>
+    <wire from="(500,200)" to="(500,280)"/>
+    <wire from="(420,170)" to="(520,170)"/>
+    <wire from="(620,170)" to="(620,210)"/>
+    <wire from="(310,290)" to="(330,290)"/>
+    <wire from="(210,240)" to="(210,280)"/>
+    <wire from="(420,130)" to="(420,170)"/>
+    <wire from="(250,340)" to="(330,340)"/>
+    <wire from="(280,150)" to="(280,200)"/>
+    <wire from="(270,60)" to="(270,120)"/>
+    <wire from="(140,240)" to="(210,240)"/>
+    <wire from="(390,60)" to="(390,120)"/>
+    <wire from="(540,290)" to="(540,340)"/>
+    <wire from="(190,220)" to="(190,280)"/>
+    <comp lib="0" loc="(690,200)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(180,30)" name="Pin">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(200,380)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="2" loc="(190,150)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(380,150)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(710,200)" name="Pin">
       <a name="facing" val="west"/>
       <a name="width" val="2"/>
     </comp>
-    <comp loc="(760,230)" name="SelDeslocadorC4">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="2" loc="(290,350)" name="Multiplexer">
+    <comp lib="2" loc="(480,150)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(270,70)" name="Pin">
+    <comp lib="0" loc="(470,30)" name="Pin">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="2" loc="(310,730)" name="Multiplexer">
+    <comp lib="0" loc="(120,100)" name="Ground"/>
+    <comp lib="2" loc="(390,310)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(220,890)" name="Pin">
+    <comp lib="2" loc="(290,310)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(280,150)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(370,30)" name="Pin">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(270,30)" name="Pin">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(390,380)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(310,890)" name="Pin">
+    <comp lib="0" loc="(490,380)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(830,290)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="2" loc="(500,540)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(510,890)" name="Pin">
+    <comp lib="0" loc="(290,380)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(470,70)" name="Pin">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(370,70)" name="Pin">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(190,190)" name="Multiplexer">
+    <comp lib="2" loc="(200,310)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(380,190)" name="Multiplexer">
+    <comp lib="2" loc="(490,310)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(300,540)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(410,730)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(120,140)" name="Ground"/>
-    <comp lib="2" loc="(200,350)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(400,540)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(390,350)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(210,540)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(220,730)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(410,890)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="2" loc="(280,190)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(490,350)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(480,190)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(510,730)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(180,70)" name="Pin">
-      <a name="facing" val="south"/>
     </comp>
   </circuit>
   <circuit name="SelDeslocadorC4">
@@ -2433,29 +2312,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(70,130)" to="(170,130)"/>
     <wire from="(70,260)" to="(170,260)"/>
     <wire from="(70,70)" to="(70,130)"/>
-    <comp lib="0" loc="(110,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="label" val="B"/>
+    <comp lib="0" loc="(260,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="S2"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(220,110)" name="OR Gate">
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(70,70)" name="Pin">
       <a name="facing" val="south"/>
       <a name="label" val="A"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="1" loc="(220,240)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="0" loc="(260,110)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="S0"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(260,240)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="S2"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(210,170)" name="Pin">
@@ -2464,7 +2338,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="S1"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="1" loc="(220,240)" name="AND Gate">
+    <comp lib="0" loc="(110,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="label" val="B"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="1" loc="(220,110)" name="OR Gate">
       <a name="inputs" val="2"/>
     </comp>
   </circuit>
@@ -2869,38 +2748,22 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(230,360)" to="(360,360)"/>
     <wire from="(2740,690)" to="(2740,710)"/>
     <wire from="(3150,1180)" to="(3200,1180)"/>
-    <comp lib="0" loc="(140,220)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="label" val="Entrada A"/>
-      <a name="labelloc" val="north"/>
+    <comp lib="2" loc="(2360,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
     </comp>
     <comp lib="2" loc="(1030,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(2220,740)" name="Multiplexer">
+    <comp lib="2" loc="(3020,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(140,1190)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Saída A"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="2" loc="(3150,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(4340,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1300,740)" name="Multiplexer">
+    <comp lib="2" loc="(2890,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -2910,17 +2773,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(1560,740)" name="Multiplexer">
+    <comp lib="2" loc="(1160,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(1830,740)" name="Multiplexer">
+    <comp lib="2" loc="(240,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(2360,740)" name="Multiplexer">
+    <comp lib="2" loc="(3420,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -2930,15 +2793,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(2490,740)" name="Multiplexer">
+    <comp lib="2" loc="(500,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(3020,740)" name="Multiplexer">
+    <comp lib="2" loc="(3150,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3950,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(4400,640)" name="Ground"/>
+    <comp lib="2" loc="(1300,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(140,220)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="label" val="Entrada A"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(210,1290)" name="Splitter">
       <a name="fanout" val="32"/>
@@ -2976,47 +2855,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="1"/>
       <a name="bit31" val="0"/>
     </comp>
-    <comp lib="2" loc="(370,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1430,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3950,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2890,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3680,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(770,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1690,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(4080,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(4210,740)" name="Multiplexer">
+    <comp lib="2" loc="(630,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -3026,7 +2865,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(2620,740)" name="Multiplexer">
+    <comp lib="2" loc="(4340,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1690,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -3036,27 +2880,62 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(240,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1160,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(630,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(500,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
     <comp lib="2" loc="(3280,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(4210,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2750,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(210,220)" name="Splitter">
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="2" loc="(770,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1560,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1830,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(4080,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3680,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2220,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1430,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2490,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -3064,26 +2943,26 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(180,780)" name="Pin">
       <a name="label" val="Seletor"/>
     </comp>
-    <comp lib="2" loc="(2750,740)" name="Multiplexer">
+    <comp lib="2" loc="(2620,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(4400,640)" name="Ground"/>
-    <comp lib="0" loc="(210,220)" name="Splitter">
-      <a name="fanout" val="32"/>
-      <a name="incoming" val="32"/>
-      <a name="appear" val="center"/>
+    <comp lib="2" loc="(370,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
     </comp>
     <comp lib="2" loc="(3810,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="2" loc="(3420,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
+    <comp lib="0" loc="(140,1190)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Saída A"/>
+      <a name="labelloc" val="north"/>
     </comp>
   </circuit>
   <circuit name="SRA">
@@ -3486,118 +3365,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1290,600)" to="(1440,600)"/>
     <wire from="(230,360)" to="(360,360)"/>
     <wire from="(3150,1180)" to="(3200,1180)"/>
-    <comp lib="0" loc="(140,220)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="label" val="Entrada A"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(140,1190)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Saída A"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="2" loc="(370,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1560,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2890,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1690,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1430,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1960,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1030,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(900,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(4210,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2750,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(4340,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2490,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2090,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1830,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
     <comp lib="2" loc="(3950,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(4080,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2220,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3150,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1160,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(500,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2360,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -3607,12 +3375,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
+    <comp lib="2" loc="(240,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2220,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
     <comp lib="2" loc="(3420,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(180,780)" name="Pin"/>
+    <comp lib="0" loc="(4370,640)" name="Ground"/>
+    <comp lib="2" loc="(2490,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
     <comp lib="0" loc="(210,1290)" name="Splitter">
       <a name="fanout" val="32"/>
       <a name="incoming" val="32"/>
@@ -3649,43 +3432,48 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="1"/>
       <a name="bit31" val="0"/>
     </comp>
-    <comp lib="2" loc="(3550,740)" name="Multiplexer">
+    <comp lib="2" loc="(1430,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(3810,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(240,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(2620,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1300,740)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(210,220)" name="Splitter">
-      <a name="fanout" val="32"/>
-      <a name="incoming" val="32"/>
-      <a name="appear" val="center"/>
     </comp>
     <comp lib="2" loc="(3680,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(4370,640)" name="Ground"/>
+    <comp lib="0" loc="(140,220)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="label" val="Entrada A"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="2" loc="(4340,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
     <comp lib="2" loc="(3020,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2360,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(140,1190)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Saída A"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="2" loc="(1560,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2890,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
@@ -3695,7 +3483,98 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
+    <comp lib="2" loc="(1830,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(180,780)" name="Pin"/>
+    <comp lib="2" loc="(2620,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3810,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1690,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1030,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(3150,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2090,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(500,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1960,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(210,220)" name="Splitter">
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="2" loc="(3550,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1300,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(370,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(4080,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
     <comp lib="2" loc="(3280,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1160,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(4210,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(900,740)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(2750,740)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
