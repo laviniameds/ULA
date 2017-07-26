@@ -1,0 +1,6 @@
+12 1 0 0 5 declara num com valor 5
+12 2 0 0 0 declara x com valor 0
+12 3 0 0 0 declara temp com valor 0
+12 4 0 0 1 declara resultado com valor 1
+ 5 2 1 0 0 atribui o valor do reg de x com o reg de num 
+29 0 1 0 x declara while com x operacoes
