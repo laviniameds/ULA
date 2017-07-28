@@ -1,6 +1,15 @@
-12 1 0 0 5 declara num com valor 5
-12 2 0 0 0 declara x com valor 0
-12 3 0 0 0 declara temp com valor 0
-12 4 0 0 1 declara resultado com valor 1
- 5 2 1 0 0 atribui o valor do reg de x com o reg de num 
-29 0 1 0 x declara while com x operacoes
+12 1 0 0 0 setar o clock baixo
+12 1 0 0 5 valor 5 pro reg 1 com soma constante
+12 2 0 0 1 valor 1 pro reg 2 com soma constante
+12 3 0 0 1 valor 1 pro reg 3 com soma constante
+30 0 3 1 9 declara laço com reg 3 (caso igual a 1 avanças 9 linhas)
+5 4 0 0 0 valor 0 pro reg 4 com soma natural
+5 5 2 0 0 reg 5 recebe valor do reg 2 com soma natural
+5 5 5 2 0 reg 5 recebe valor dele mesmo e do reg 2 com soma natural
+12 4 4 0 1 reg 4 é somado com 1 com soma constante
+29 0 4 3 4094 declara laço com reg 0 para verificar o reg 4 e reg 3, volta 2 linhas se diferentes. 4094 é -2 em comp de 2 com 12 bits.
+12 3 3 0 1 reg 3 é somado com ele mesmo + 1 com soma constante
+5 2 0 5 0 reg 2 recebe o valor de reg 5 com soma natural
+31 0 0 0 4088 jmp para voltar 8 linhas. 4088 é -8 em comp. de 2 com 12 bits.
+1 0 2 0 0 exibe o resultado do reg 2 com a operacao OR  com o reg 0
+31 0 0 0 4095 jmp para voltar a exibir a linha anterior com o valor de reg 2
